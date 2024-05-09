@@ -64,4 +64,6 @@ function showSlide(index) {
     console.log("showSlide: " + index)
 }
 
+setInterval(() => nextSlide(1), 2000);
+
 document.getElementById("next").addEventListener("click", () => nextSlide(1))
