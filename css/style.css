@@ -1,1 +1,825 @@
 /* ini css */
+body{
+    background-color: hsl(214, 24%, 94%);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    width: 750px;
+    /* margin:200px;
+    margin-top: 10px; */
+    height: 1800px;
+
+}
+.container>.moqups-header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container>.moqups-header>.logo{
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.container>.moqups-header>nav{
+    align-self: center;
+    margin-right: 20px;
+    display: flex;
+}
+
+.container>.moqups-header>nav>button{
+    background-color: white;
+    padding:10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container>.moqups-header> nav>.wing{
+    border:2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container>.moqups-header>nav>.wing-left{
+    border-radius:5px 0 0 5px;
+}
+
+.container>.moqups-header> nav>.wing-right{
+    border-radius:0 5px 5px 0;
+}
+
+.container>.moqups-header> nav>.middle{
+    border-right: none;
+    border-left: none;
+}
+
+.container>.moqups-header>nav>.wing-left:hover{
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    /* box-shadow: 0 9px #999; */
+    background-color: orange;
+}
+
+.container>.moqups-header>nav>.wing-right:hover{
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    /* box-shadow: 0 9px #999; */
+    background-color: orange;
+}
+
+.container>.moqups-header>nav>.middle:hover{
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    /* box-shadow: 0 9px #999; */
+    background-color: orange;
+}
+
+.container>.moqups-header>nav>.wing-left:active{
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
+}
+
+.container>.moqups-header>nav>.wing-right:active{
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
+}
+
+.container>.moqups-header>nav>.middle:active{
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
+}
+
+.container>.home-section>header>h1{
+    text-align: center;
+}
+
+.container>.home-section>header>h4{
+    text-align: center;
+    color: gray;
+}
+
+.container>.home-section>.image-contact{
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 710px;
+    height: 660px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container>.home-section>.image-contact>.image{
+    width: 400px;
+    /* border: 2px solid orange; */
+}
+
+
+
+/* AUTOSLIDE */
+
+
+
+.container>.home-section>.image-contact>.image>.collection{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 2px solid block;
+}
+
+.container>.home-section>.image-contact>.image>.collection>.main-picture{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.container>.home-section>.image-contact>.image>#next{
+    margin-left: 78%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 9px #999;
+}
+
+.container>.home-section>.image-contact>.image>#next:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.container>.home-section>.image-contact>.image>#next:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/* AUTOSLIDE */
+
+
+
+.container>.home-section>.image-contact>.contact-us{
+    background-color: hsl(214, 24%, 94%);
+    width: 270px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.container>.home-section>.image-contact>.image>.quoted-image{
+    font-size: 12px;
+    font-style: italic;
+    color: gray;
+    padding-left: 20px;
+}
+
+.container>.home-section>.image-contact>.image>.pfp-status{
+    display: flex;
+    align-items: center;
+}
+
+.container>.home-section>.image-contact>.image>.pfp-status>.pfp{
+    border-radius: 50%;
+    border:2px solid orange;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.container>.home-section>.image-contact>.image>.pfp-status>.name{
+    height: 10px;
+    width: 50px;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.container>.home-section>.image-contact>.image>.pfp-status>.status{
+    height: 10px;
+    width: 60px;
+    margin: 0;
+    padding-left: 7px;
+    padding-bottom: 3px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+.container>.home-section>.image-contact>.image>.description{
+    padding-left: 20px;
+}
+
+.container>.home-section>.image-contact>.image>ol{
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+.container>.home-section>.image-contact>.image>ol li{
+    counter-increment: my-awesome-counter;
+    line-height: 50px;
+    color:gray;
+}
+
+.container>.home-section>.image-contact>.image>ol li::before{
+    content: counter(my-awesome-counter)". ";
+    color: gray;
+    font-weight: bold;
+    background-color:lightgray;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border:2px solid darkgray;
+    padding:10px;
+    margin-right: 50px;
+}
+
+
+
+.container>.home-section>.image-contact>.contact-us>h4{
+    margin-left: 20px;
+}
+
+.container>.home-section>.image-contact>.contact-us>p{
+    margin-left: 20px;
+    color: gray;
+    font-size: 12px;
+}
+
+.container>.home-section>.image-contact>.contact-us>h5{
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+
+.container>.home-section>.image-contact>.contact-us>input{
+    margin-left: 20px;
+    height: 35px;
+    width: 200px;
+    border: darkgray 2px solid;
+    border-radius:5px ;
+}
+
+.container>.home-section>.image-contact>.contact-us>#username-error{
+    line-height: 0px;
+    color:red;
+}
+
+.container>.home-section>.image-contact>.contact-us>#email-error{
+    line-height: 0px;
+    color:red;
+}
+
+.container>.home-section>.image-contact>.contact-us>#option-error{
+    line-height: 0px;
+    color:red;
+}
+
+.container>.home-section>.image-contact>.contact-us>#send{
+    margin-left: 20px;
+    height: 50px;
+    width: 208px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+}
+
+.container>.home-section>.image-contact>.contact-us>#send:hover{
+    background-color: orange;
+    color: black;
+}
+
+.container>.home-section>.image-contact>.contact-us>#send:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+} 
+
+.container>.our-package-section>header{
+    display: flex;
+    background-color: hsl(214, 24%, 94%);
+}
+
+.container>.our-package-section>header>h1{
+    height: 200px;
+    line-height:200px;
+    padding-left: 300px;
+}
+
+.container>.our-package-section>.our-package-section-content-1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container>.our-package-section>.our-package-section-content-1>div{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container>.our-package-section>.our-package-section-content-1>div>.star{
+    background-color: hsl(214, 24%, 94%);
+    width: 31px;
+    height: 43px;
+    border-radius: 50%;
+    padding-left: 8px;
+    padding-right: 5px;
+    line-height: 40px;
+    border:2px solid lightgray;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.container>.our-package-section>.our-package-section-content-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container>.our-package-section>.our-package-section-content-2>div{
+    width:120px;
+    color: gray;
+}
+
+.container>.call-us-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container>.call-us-section>p{
+    color:gray;
+}
+
+.container>.call-us-section>button{
+    margin-left: 20px;
+    height: 30px;
+    width: 208px;
+    padding-top:3px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+}
+
+.container>.call-us-section>button:hover{
+    background-color: orange;
+    color: black;
+}
+
+.container>.call-us-section>button:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.container>footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container>footer>img{
+    width: 70px;
+}
+
+.container>footer>p{
+    color: gray;
+}
+
+
+
+
+/* MEDIA QUERY */
+
+
+
+@media (max-width:600px){
+    body{
+        background-color: hsl(214, 24%, 94%);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container{
+        background-color: white;
+        width:85%;
+        height: 2200px;
+    
+    }
+    .container>.moqups-header{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    
+    .container>.moqups-header>.logo{
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    
+    .container>.moqups-header>nav{
+        align-self: center;
+        margin-right: 20px;
+        display: flex;
+    }
+    
+    .container>.moqups-header>nav>button{
+        background-color: white;
+        padding:10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .container>.moqups-header> nav>.wing{
+        border:2px solid black;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .container>.moqups-header>nav>.wing-left{
+        border-radius:5px 0 0 5px;
+    }
+    
+    .container>.moqups-header> nav>.wing-right{
+        border-radius:0 5px 5px 0;
+    }
+    
+    .container>.moqups-header> nav>.middle{
+        border-right: none;
+        border-left: none;
+    }
+    
+    .container>.moqups-header>nav>.wing-left:hover{
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        /* box-shadow: 0 9px #999; */
+        background-color: orange;
+    }
+    
+    .container>.moqups-header>nav>.wing-right:hover{
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        /* box-shadow: 0 9px #999; */
+        background-color: orange;
+    }
+    
+    .container>.moqups-header>nav>.middle:hover{
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        /* box-shadow: 0 9px #999; */
+        background-color: orange;
+    }
+    
+    .container>.moqups-header>nav>.wing-left:active{
+        /* box-shadow: 0 5px #666; */
+        transform: translateY(4px);
+    }
+    
+    .container>.moqups-header>nav>.wing-right:active{
+        /* box-shadow: 0 5px #666; */
+        transform: translateY(4px);
+    }
+    
+    .container>.moqups-header>nav>.middle:active{
+        /* box-shadow: 0 5px #666; */
+        transform: translateY(4px);
+    }
+
+    .container>.home-section{
+        height: 1200px;
+    }
+    
+    .container>.home-section>header>h1{
+        text-align: center;
+    }
+    
+    .container>.home-section>header>h4{
+        text-align: center;
+        color: gray;
+    }
+    
+    .container>.home-section>.image-contact{
+        box-sizing: border-box;
+        /* border: 2px solid black; */
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+    
+    .container>.home-section>.image-contact>.image{
+        width: 90%;
+        /* border: 2px solid orange; */
+    }
+    
+    /.container>.home-section>.image-contact>.image>.collection{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        border: 2px solid block;
+    }
+    
+    .container>.home-section>.image-contact>.image>.collection>.main-picture{
+        width: 65%;
+        height: 200px;
+        border-radius: 10px;
+        background-size: cover;
+    }
+    
+    .container>.home-section>.image-contact>.image>#next{
+        margin-left: 78%;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: orange;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 0 9px #999;
+    }
+    
+    .container>.home-section>.image-contact>.image>#next:hover{
+        background-color: yellow;
+        color: black;
+    }
+    
+    .container>.home-section>.image-contact>.image>#next:active{
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    
+    .container>.home-section>.image-contact>.image>.quoted-image{
+        font-size: 12px;
+        font-style: italic;
+        color: gray;
+        padding-left: 20px;
+    }
+    
+    .container>.home-section>.image-contact>.image>.pfp-status{
+        display: flex;
+        align-items: center;
+    }
+    
+    .container>.home-section>.image-contact>.image>.pfp-status>.pfp{
+        border-radius: 50%;
+        border:2px solid orange;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+    }
+    
+    .container>.home-section>.image-contact>.image>.pfp-status>.name{
+        height: 10px;
+        width: 50px;
+        margin: 0;
+        padding-left: 5px;
+    }
+    
+    .container>.home-section>.image-contact>.image>.pfp-status>.status{
+        height: 10px;
+        width: 60px;
+        margin: 0;
+        padding-left: 7px;
+        padding-bottom: 3px;
+        margin-left: 10px;
+        font-size: 12px;
+        font-style: italic;
+        background-color: orange;
+        color: white;
+        border: 1px solid orange;
+        border-radius: 10px;
+    }
+    
+    .container>.home-section>.image-contact>.image>.description{
+        padding-left: 20px;
+    }
+    
+    .container>.home-section>.image-contact>.image>ol{
+        list-style: none;
+        counter-reset: my-awesome-counter;
+        padding-left: 20px;
+    }
+    
+    .container>.home-section>.image-contact>.image>ol li{
+        counter-increment: my-awesome-counter;
+        line-height: 50px;
+        color:gray;
+        font-size: 16px;
+        
+    }
+    
+    .container>.home-section>.image-contact>.image>ol li::before{
+        content: counter(my-awesome-counter)". ";
+        color: gray;
+        font-weight: bold;
+        background-color:lightgray;
+        width:30px;
+        height:30px;
+        border-radius: 50%;
+        border:2px solid darkgray;
+        padding:10px;
+        margin-right: 10px;
+    }
+    
+    .container>.home-section>.image-contact>.contact-us{
+        background-color: hsl(214, 24%, 94%);
+        width: 250px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    
+    .container>.home-section>.image-contact>.contact-us>h4{
+        margin-left: 20px;
+    }
+    
+    .container>.home-section>.image-contact>.contact-us>p{
+        margin-left: 20px;
+        color: gray;
+        font-size: 12px;
+    }
+    
+    .container>.home-section>.image-contact>.contact-us>h5{
+        margin-left: 20px;
+        margin-bottom: 3px;
+    }
+    
+    .container>.home-section>.image-contact>.contact-us>input{
+        margin-left: 20px;
+        height: 20px;
+        width: 200px;
+        border: darkgray 2px solid;
+        border-radius:5px ;
+    }
+
+    .container>.home-section>.image-contact>.contact-us>#username-error{
+        line-height: 0px;
+        color:red;
+    }
+    
+    .container>.home-section>.image-contact>.contact-us>#email-error{
+        line-height: 0px;
+        color:red;
+    }
+    
+    .container>.home-section>.image-contact>.contact-us>#option-error{
+        line-height: 0px;
+        color:red;
+    }
+    
+    .container>.home-section>.image-contact>.contact-us>#send{
+        margin-left: 20px;
+        height: 40px;
+        width: 208px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 9px #999;
+    }
+    
+    .container>.home-section>.image-contact>.contact-us>#send:hover{
+        background-color: orange;
+        color: black;
+    }
+    
+    .container>.home-section>.image-contact>.contact-us>#send:active{
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    } 
+    
+    .container>.our-package-section>header{
+        display: flex;
+        justify-content: center;;
+        background-color: hsl(214, 24%, 94%);
+    }
+    
+    .container>.our-package-section>header>h1{
+        height: 0;
+        line-height:0;
+        padding-left: 0;
+    }
+
+    .container>.our-package-section>.our-package-section-content-1{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .container>.our-package-section>.our-package-section-content-1>div{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .container>.our-package-section>.our-package-section-content-1>div>.star{
+        background-color: hsl(214, 24%, 94%);
+        width: 31px;
+        height: 43px;
+        border-radius: 50%;
+        padding-left: 8px;
+        padding-right: 5px;
+        line-height: 40px;
+        border:2px solid lightgray;
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 50px;
+    }
+    
+    .container>.our-package-section>.our-package-section-content-2{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .container>.our-package-section>.our-package-section-content-2>div{
+        width:120px;
+        color: gray;
+    }
+    
+    .container>.call-us-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container>.call-us-section>p{
+        color:gray;
+    }
+    
+    .container>.call-us-section>button{
+        margin-left: 20px;
+        height: 30px;
+        width: 208px;
+        padding-top:3px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 9px #999;
+    }
+    
+    .container>.call-us-section>button:hover{
+        background-color: orange;
+        color: black;
+    }
+    
+    .container>.call-us-section>button:active{
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+    
+    .container>footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container>footer>img{
+        width: 70px;
+    }
+    
+    .container>footer>p{
+        color: gray;
+    }    
+
+}
